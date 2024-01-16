@@ -6,7 +6,7 @@ import baseConfig from './playwright.config'; // import your base configuration
 const regressionConfig: PlaywrightTestConfig = {
   ...baseConfig,
   testMatch: [
-    'example.spec.ts',
+    'tests/map-functionality.spec.ts'
   ], // specify the test files
   workers: 1,
 };
