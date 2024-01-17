@@ -22,7 +22,7 @@ test.describe('Suggestion And Report Functionality', () => {
     await basePage.goto('/#/categories');
   });
 
-  test('Should be able to leave suggestion', async ({ page }) => {
+  test('Should be able to leave suggestion @smoke', async ({ page }) => {
     const suggestionReportPage = new SuggestionReportPage(page);
 
     await suggestionReportPage.clickOnCreateSuggestionOrReportButton();
@@ -37,7 +37,7 @@ test.describe('Suggestion And Report Functionality', () => {
     await suggestionReportPage.checkIsSuggestionOrReportSentWithoutError();
   });
 
-  test('Should be able to leave report', async ({ page }) => {
+  test('Should be able to leave report @smoke', async ({ page }) => {
     const suggestionReportPage = new SuggestionReportPage(page);
 
     await suggestionReportPage.clickOnCreateSuggestionOrReportButton();

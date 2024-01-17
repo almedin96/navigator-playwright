@@ -20,7 +20,7 @@ test.describe('Place', () => {
     await basePage.goto('/#/categories');
   });
 
-  test('Should be able to create new place', async ({ page }) => {
+  test('Should be able to create new place @smoke', async ({ page }) => {
     const placePage = new PlacePage(page);
 
     placeData.placeDetails.name = `place-${await generateUniqueString(7)}`;
