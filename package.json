@@ -9,6 +9,7 @@
     "typescript": "^5.3.3"
   },
   "scripts": {
-    "test": "playwright test"
+    "test:regression": "playwright test --config=playwright.config.regression.ts --headed --reporter=html",
+    "test:smoke": "playwright test --config=playwright.config.regression.ts --headed --reporter=html --grep @smoke"
   }
 }

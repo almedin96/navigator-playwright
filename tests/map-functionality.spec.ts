@@ -24,7 +24,7 @@ test.describe('Map Functionality', () => {
     await mapPage.validateLocationMarkerIsVisible();
   });
 
-  test('Should be able to search place on map', async ({ page }) => {
+  test('Should be able to search place on map @smoke', async ({ page }) => {
     const mapPage = new MapPage(page);
 
     await mapPage.searchAndOpenPlace('Look');
@@ -32,7 +32,7 @@ test.describe('Map Functionality', () => {
     await mapPage.validatePlaceIsVisible('Look');
   });
 
-  test('Should be able to search street on map', async ({ page }) => {
+  test('Should be able to search street on map @smoke', async ({ page }) => {
     const mapPage = new MapPage(page);
 
     await mapPage.searchAndOpenStreet('14. maja 92');
