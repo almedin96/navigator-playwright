@@ -69,14 +69,18 @@ class SuggestionReportPage extends BasePage {
   }
 
   async checkIsSuggestionOrReportSentWithoutError() {
-    const errorMessage =
-        '//div[@class="nav-lefthand-form feedback"]//div[@class="alert alert-error"]';
+    let isErrorShown;
+    const errorMessage = '//div[@class="nav-lefthand-form feedback"]//div[@class="alert alert-error"]';
 
-    await this.page.waitForSelector(errorMessage, { timeout: 5000 });
-
-    let isErrorShown = await this.page.locator(errorMessage).isVisible();
-    expect(isErrorShown).toBe(false);
-  }
+    try {
+        await this.page.waitForSelector(errorMessage, { timeout: 10000 });
+    
+        isErrorShown = await this.page.locator(errorMessage).isVisible();
+      } catch (error) {
+        console.error('An error occurred:', error);
+      }
+      await expect(isErrorShown).toBeFalsy();
+    }
 
   async clickOnSubmitSuggestionOrReportButton() {
     await this.submitSuggestionOrReport.click();

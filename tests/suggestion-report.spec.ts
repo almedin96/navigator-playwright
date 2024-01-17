@@ -11,7 +11,7 @@ test.describe('Suggestion And Report Functionality', () => {
 
   test.beforeAll(async ({ }) => {
     suggestionAndReportData = await readDataFromJsonFile(
-        './data/suggestionAndReportData/suggestionAndReport.json',
+        './data/suggestionAndReport/suggestionAndReportData.json',
       );
     uniqueEmail = await generateUniqueEmail(10);
     userFullName = await generateUniqueString(10);

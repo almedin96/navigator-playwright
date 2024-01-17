@@ -7,7 +7,8 @@ const regressionConfig: PlaywrightTestConfig = {
   ...baseConfig,
   testMatch: [
     'tests/map-functionality.spec.ts',
-    'tests/suggestion-report.spec.ts'
+    'tests/suggestion-report.spec.ts',
+    'tests/place.spec.ts'
   ], // specify the test files
   workers: 1,
 };

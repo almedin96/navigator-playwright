@@ -1,5 +1,6 @@
 import { Page } from 'playwright';
 import fs from 'fs'; 
+import path from 'path';
 
 export async function generateUniqueEmail(length: number) {
     let result = '';
@@ -39,3 +40,13 @@ export async function generateUniqueEmail(length: number) {
       });
     });
   }
+
+  export async function getPathOfFirstFileFromDataImagesFolder() {
+    const files = fs.readdirSync('./data/images');
+    const firstFileFromDataImagesFolder = path.join(
+      __dirname,
+      `../data/images/${files[0]}`,
+    );
+    return firstFileFromDataImagesFolder;
+  }
+  

@@ -1,0 +1,43 @@
+{
+    "placeDetails": {
+      "name": "Locco",
+      "city": "Vitez",
+      "street": "Santici bb",
+      "zipCode": "72250",
+      "houseNumber": "14",
+      "alternativeAddress": "Santici 15",
+      "description": "First place"
+    },
+    "placeCategory": {
+      "tags": "desert"
+    },
+    "phone": {
+      "phone": "030715736",
+      "mobile": "+387644513315",
+      "fax": "121"
+    },
+    "web": {
+      "web": "",
+      "email": "",
+      "facebookUrl": "",
+      "instagramUrl": "",
+      "twitterUrl": "",
+      "wikipediaUrl": "",
+      "youtubeUrl": "https://www.youtube.com/",
+      "tripAdvisorUrl": "",
+      "foursquareUrl": "",
+      "instagramHashtag": ""
+    },
+    "wireless": {
+      "wiFiCheckbox": true,
+      "wifiPassword": "kobilica1",
+      "networkName": "kobaa"
+    },
+    "acceptCards": {
+      "acceptCreditCardsCheckbox": true
+    },
+    "comment": {
+      "commentInputField": "Nestled in the heart of a vibrant city, this place captivates visitors with its eclectic blend of modern sophistication and cultural charm."
+    }
+  }
+  
