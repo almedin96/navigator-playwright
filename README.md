@@ -28,7 +28,7 @@ These instructions will guide you through setting up project locally. By followi
 
 
 ### Pre-requirements
-You need to have Node and Yarn package manager installed installed on your computer.
+You need to have Node and Yarn package manager installed on your computer.
 
 You can check if they're installed by running the following commands:
 node --version
@@ -40,6 +40,7 @@ Follow these steps to get your development environment running:
 
 Clone the project
 Install dependencies: yarn install
+Install playwright: yarn add -D playwright
 
 
 ## Set environment variables
