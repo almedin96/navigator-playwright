@@ -38,9 +38,9 @@ yarn --version
 ## Installation
 Follow these steps to get your development environment running:
 
-Clone the project
+Clone the project https://github.com/almedin96/navigator-playwright.git
 Install dependencies: yarn install
-Install playwright: yarn add -D playwright
+Install playwright: yarn playwright install
 
 
 ## Set environment variables
@@ -51,15 +51,15 @@ Install playwright: yarn add -D playwright
 
 ##### For Windows users:
 
-- set ENV_NAME=navigator
+- set ENV_NAME=navigator (set ENV_NAME=navigator&& yarn test:regression)
 
 
 ## How to run tests
 
 There are three scripts and these scripts can be found inside package.json file.
 
-- ENV_NAME="navigator" yarn test:regression - this command will run all tests specs in headed mode 
-- ENV_NAME="navigator" yarn test:smoke - this command will run all tests specs, but only tests with tag "@smoke"
+- yarn test:regression - this command will run all tests specs in headed mode (ENV_NAME="navigator" yarn test:regression without setted env variable)
+- yarn test:smoke - this command will run all tests specs, but only tests with tag "@smoke" (ENV_NAME="navigator" yarn test:smoke without setted env variable)
 - ENV_NAME="navigator" yarn test:regression-pipeline - this command will run tests in headless mode (command used for pipeline in playwright.yml file)
 
 
