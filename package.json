@@ -10,6 +10,7 @@
   },
   "scripts": {
     "test:regression": "playwright test --config=playwright.config.regression.ts --headed --reporter=html",
-    "test:smoke": "playwright test --config=playwright.config.regression.ts --headed --reporter=html --grep @smoke"
+    "test:smoke": "playwright test --config=playwright.config.regression.ts --headed --reporter=html --grep @smoke",
+    "test:regression-pipeline": "playwright test --config=playwright.config.regression.ts --reporter=html"
   }
 }

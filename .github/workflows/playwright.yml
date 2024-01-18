@@ -18,7 +18,7 @@ jobs:
     - name: Install Playwright Browsers
       run: yarn playwright install --with-deps
     - name: Run Playwright tests
-      run: ENV_NAME="navigator" yarn test:regression
+      run: ENV_NAME="navigator" yarn test:regression-pipeline
     - uses: actions/upload-artifact@v3
       if: always()
       with:

@@ -56,10 +56,12 @@ Install playwright: yarn add -D playwright
 
 ## How to run tests
 
-There two scripts and these scripts can be found inside package.json file.
+There are three scripts and these scripts can be found inside package.json file.
 
-- ENV_NAME="navigator" yarn test:regression
-- ENV_NAME="navigator" yarn test:smoke
+- ENV_NAME="navigator" yarn test:regression - this command will run all tests specs in headed mode 
+- ENV_NAME="navigator" yarn test:smoke - this command will run all tests specs, but only tests with tag "@smoke"
+- ENV_NAME="navigator" yarn test:regression-pipeline - this command will run tests in headless mode (command used for pipeline in playwright.yml file)
+
 
 ### How to open report
 
